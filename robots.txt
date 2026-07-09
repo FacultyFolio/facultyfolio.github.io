@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://facultyfolio.github.io/sitemap.xml
