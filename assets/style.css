@@ -531,3 +531,19 @@ section[id]{scroll-margin-top:78px;}
    wrapped in the same .panel card as a populated one, so it reads as a real bordered card
    rather than a bare line. (Sub-slot placeholders already sit inside their section's panel.) */
 .muted{color:var(--mute); font-size:14.5px; line-height:1.6; margin:14px 0 2px;}
+
+/* unit icon tile: a rounded square carrying an inline glyph. Sized by --tile so one rule
+   serves a college (48px) and its departments (40px); the radius scales with it. */
+.utile{width:var(--tile,48px); height:var(--tile,48px); border-radius:calc(var(--tile,48px)*.29); display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto; color:#fff; margin-bottom:12px;}
+.utile svg{width:55%; height:55%;}
+.t-green{background:#1e3d2b;} .t-crimson{background:#c8102e;} .t-ink{background:#1c1c1c;}
+.t-navy{background:var(--nav);} .t-accent{background:var(--accent);}
+.t-muted{background:var(--hair-2); color:var(--faint);}
+
+/* a college shown but NOT published here ([colleges] x = "muted"): same card, same counts,
+   drawn back. It is a <div>, not an <a> -- there is no page to open, and a card that looked
+   clickable would promise one. */
+.hub-card.is-muted{background:transparent; border-style:dashed; box-shadow:none; cursor:default;}
+.hub-card.is-muted .hub-name{color:var(--ink-2);}
+.hub-card.is-muted .hub-stats{color:var(--faint);}
+.hub-card.is-muted:hover{border-color:var(--hair); transform:none;}
