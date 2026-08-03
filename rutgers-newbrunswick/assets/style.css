@@ -547,3 +547,8 @@ section[id]{scroll-margin-top:78px;}
 .hub-card.is-muted .hub-name{color:var(--ink-2);}
 .hub-card.is-muted .hub-stats{color:var(--faint);}
 .hub-card.is-muted:hover{border-color:var(--hair); transform:none;}
+
+/* a university's own wordmark on its root-picker card (replaces the glyph tile). Wide
+   lockups, so height-capped and left-aligned; muted cards grey it like their text. */
+.hub-logo{display:block; height:44px; max-width:210px; object-fit:contain; object-position:left center; margin-bottom:12px;}
+.hub-card.is-muted .hub-logo{filter:grayscale(1); opacity:.45;}
