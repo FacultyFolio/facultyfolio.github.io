@@ -552,3 +552,30 @@ section[id]{scroll-margin-top:78px;}
    lockups, so height-capped and left-aligned; muted cards grey it like their text. */
 .hub-logo{display:block; height:44px; max-width:210px; object-fit:contain; object-position:left center; margin-bottom:12px;}
 .hub-card.is-muted .hub-logo{filter:grayscale(1); opacity:.45;}
+
+/* --- the root: search over everyone, then the universities ------------------------ */
+.sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;}
+.usearch{margin:22px 0 30px;}
+#uq{width:100%; box-sizing:border-box; padding:13px 16px; font-family:var(--f-sans); font-size:16px; color:var(--ink); background:var(--card); border:1px solid var(--hair); border-radius:var(--radius); box-shadow:var(--shadow);}
+#uq:focus{outline:2px solid var(--accent); outline-offset:1px; border-color:var(--accent);}
+.ufilt{display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-top:10px;}
+.ufilt button{font-family:var(--f-mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-2); background:transparent; padding:5px 11px; border:1px solid var(--hair); border-radius:999px; cursor:pointer;}
+.ufilt button:hover{border-color:var(--accent); color:var(--accent);}
+.ufilt button.on{background:var(--nav); border-color:var(--nav); color:#fff;}
+.ufilt-n{font-family:var(--f-mono); font-size:11px; color:var(--faint);}
+.uresults{list-style:none; margin:16px 0 0; padding:0;}
+.uresults li{border-bottom:1px solid var(--hair-2);}
+.uresults a{display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 12px; padding:11px 2px; text-decoration:none;}
+.uresults a:hover{background:var(--hair-2);}
+.ur-n{font-size:15px; color:var(--ink);}
+.ur-m{font-size:12.5px; color:var(--ink-2);}
+.ur-none{padding:14px 2px; color:var(--mute); font-size:14px;}
+.uni-cap{font-size:12px; color:var(--ink-2); margin:18px 0 0; max-width:60ch;}
+.ur-f{font-family:var(--f-mono); font-size:10px; letter-spacing:.05em; color:var(--pos); border:1px solid var(--pos); border-radius:999px; padding:1px 7px;}
+.umore{font-family:var(--f-mono); font-size:11px; color:var(--faint); margin:12px 0 0;}
+.uni-block{display:flex; flex-direction:column;}
+.uni-rise{list-style:none; margin:8px 0 0; padding:0;}
+.uni-rise li a{display:flex; justify-content:space-between; gap:10px; padding:4px 2px; text-decoration:none; font-size:12.5px;}
+.uni-rise li a:hover .rz-n{color:var(--accent);}
+.rz-n{color:var(--ink-2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.rz-m{font-family:var(--f-mono); font-size:11px; color:var(--pos); flex:0 0 auto;}
