@@ -552,6 +552,8 @@ section[id]{scroll-margin-top:78px;}
    lockups, so height-capped and left-aligned; muted cards grey it like their text. */
 .hub-logo{display:block; height:44px; max-width:210px; object-fit:contain; object-position:left center; margin-bottom:12px;}
 .hub-card.is-muted .hub-logo{filter:grayscale(1); opacity:.45;}
+.hub-cards .uni-block{display:flex; flex-direction:column;}
+.hub-cards .uni-block > .hub-card{flex:1;}
 
 /* --- the root: search over everyone, then the universities ------------------------ */
 .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;}
